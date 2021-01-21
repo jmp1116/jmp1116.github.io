@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortfolioWebsite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+   <!-- Masthead-->
+   <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">John Mark Peterson</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Software Engineer Extraordinaire</h2>
+            <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>
+        </div>
+    </div>
+</header>
+<body id="page-top">
+       <!-- Navigation-->
+       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="about-section text-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="profile-pic">
+    
+                        <img class="profile-pic" src="images/ProfilePic1.jpg" alt="">
+    
+                    </div>
+                    <h2 class="text-white mb-4">About Me</h2>
+                    <p class="text-white-50">
+                        I am a recent graduate of the TrueCoders immersive Software Engineering bootcamp, with a goal of furthuring my skills and career as a software engineer. I am currently interested in full stack development, backend development, cloud services, and front end development opportunities.
+                    </p>
+                </div>
+            </div>
+            <img class="img-fluid" src="images/ipad.png" alt="" />
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container">
+            <!-- Featured Project Row-->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="images/computer.jpg" alt="" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Work Database Website</h4>
+                        <p class="text-black-50 mb-0">
+                            C#​ ​|​ ​ASP​.​NET​ ​Core​ ​MVC​ ​|​ ​SQL​ ​|​ ​HTML​ ​|​ ​CSS​ ​|​ ​JavaScript
+    
+                            App takes advantage of dependency injection by using an IoC container to handle the newing up of objects.
+                            Used a MySQL database on the backend for data storage. Created with an EmployeeRepo and CustomerRepo model with CRUD methods for inserting, displaying, updating, and deleting both customers and employees.
+                            The Customer and Employee models call the correct views and display them with correct data. Includes search bar for both employees and customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+ 
+        <!-- Project Three Row-->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6"><img class="img-fluid" src="images/computer4.jpg" alt="" /></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">Tacobell Geolocator</h4>
+                            <p class="mb-0 text-white-50">
+                                C# | .NET CORE | SQL | xUnit
+    
+                                Uses a CSV file or a SQL database to populate an IEnumerable called locations.
+                                Test-Driven Development using xUnit ensures that invalid or missing data is handled correctly.
+                                If the data is out of bounds or cannot be parsed, then the parse method returns null.
+                                Utilizing the Geolocator NuGet package, the program will calculate the two farthest Tacobells.
+                            </p>
+                            <hr class="d-none d-lg-block mb-0 ml-0" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Four Row-->
+        <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6"><img class="img-fluid" src="images/computer5.jpg" alt="" /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">Best Buy CRUD Database Console</h4>
+                            <p class="mb-0 text-white-50">
+                                SQL | C# | .NET Core
+    
+                                BestBuy database simulates an inventory management system and employee sales records.
+                                Implemented a repository pattern to isolate the data access logic and business logic in order to allow for a more loosely coupled approach to data access from a sample BestBuy database.
+                                Demonstrated CRUD operations through a console user interface.
+                            </p>
+                            <hr class="d-none d-lg-block mb-0 mr-0" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    
+               <!-- Project One Row-->
+               <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6"><img class="img-fluid" src="images/computer2.jpg" alt="" /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">CRUD Database Website</h4>
+                                <p class="mb-0 text-white-50">
+                                    C#​ ​|​ ​ASP​.​NET​ ​Core​ ​MVC​ ​|​ ​SQL​ ​|​ ​HTML​ ​|​ ​CSS​ ​|​ ​JavaScript
+    
+                                    App takes advantage of dependency injection by using an IoC container to handle the newing up of objects.
+                                    Used a MySQL database on the backend for data storage.
+                                    Created a ProductRepository model with CRUD methods for inserting new products, displaying products, updating a product, and deleting products.
+                                    ProductController links the models to the views and calls the correct views to display depending on the user’s interaction.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row-->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6"><img class="img-fluid" src="images/computer3.jpg" alt="" /></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">KanyeREST</h4>
+                                <p class="mb-0 text-white-50">
+                                    C# | .NET Core | JSON | API
+    
+                                    Program simulates a conversation between Kanye West and Ron Swanson through API calls.
+                                    Using the Newtonsoft.JSON NuGet package the program will make a call to the Kanye URL and parse the JSON object into a string called kanyeQuote.
+                                    Application makes a call to the Ron Swanson API and parses the JSON Array into a string called swansonQuote.
+                                    Program will “chat” using a loop to simulate the two talking back and forth until the loop finishes execution.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 mr-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Address</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">1619 16th Avenue South, Birmingham, AL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"><a href="#!">jmp1116@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">+1 (205) 584-5376</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="https://www.linkedin.com/in/john-mark-peterson-86a596204/"><i class="fab fa-linkedin"></i></a>
+                <a class="mx-2" href="https://www.facebook.com/johnmark.peterson.1"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-2" href="https://github.com/jmp1116"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+       
+</body>
+<script src="scripts.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="site.js" asp-append-version="true"></script>
+
+
+</html>
